@@ -14,6 +14,8 @@ public class RestfulTestData {
     }
 
     public Map<String,Object> expectedDataMethod (String firstname,String lastname,Integer totalprice,Boolean depositpaid,Map<String,String>bookingdates){
+
+        //API ye gonderecgimiz payload'imiz ==>  ana Map (Outer Map)
         Map<String,Object> expectedDataMap = new HashMap<>();
         expectedDataMap.put("firstname",firstname);
         expectedDataMap.put("lastname",lastname);
